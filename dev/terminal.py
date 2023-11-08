@@ -5,7 +5,7 @@ class Terminal:
         pass
     
     @classmethod
-    def INPUT_TYPES(s):
+    def INPUT_TYPES(cls):
         return {"required": {"image": ("IMAGE",), "text": ("STRING", {"multiline": True})}}
     RETURN_TYPES = ("IMAGE",)
     FUNCTION = "execute"
